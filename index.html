@@ -1,0 +1,42 @@
+<!-- Index.html file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="style.css">
+    <title>QR Code Scanner / Reader
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Crescent Academy Pick Up Link</h1>
+        <div class="section">
+            Instead of scanning QR codes and submitting forms in the queue, use the steps below to create a link that will automatically open and submit when clicked.
+        </div>
+        <div class="section">
+            <div id="step1">
+                <span class="step-highlight">Step 1:</span> Scan or upload your QR code. 
+                <div id="my-qr-reader">
+                </div>
+            </div>
+            <div class="step2">
+                <span class="step-highlight">Step 2:</span> Copy the link below and save it to your notes app. During pick up, just click on the link. That's all. It will automatically open and submit the prefilled form.
+                <div style="text-align:center">
+                  <button id="copyButton" display="none" onclick="copyLink()">Copy to clipboard</button>
+                </div>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://unpkg.com/html5-qrcode">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
